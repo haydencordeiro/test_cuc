@@ -1,4 +1,6 @@
- Feature: verify flipkart home page
-    Scenario: verify user is able to launch home page
-        Given i am on flipkart home page
-        # Then verify if search bar is there 
+ Feature: Search for phones on flipkart
+    Scenario: Search phones and get matches on flipkart
+        Given Visit "https://flipkart.com/"
+        Then Close login popup
+        Then search for "phones"
+        Then Verfy if results of "phones" have appeared
