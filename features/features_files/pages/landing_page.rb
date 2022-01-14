@@ -1,8 +1,8 @@
 class LandingPage
     def initialize
-        @pop_up_close_button_selector=[:css, 'button[class="_2KpZ6l _2doB4z"]']
-        @search_bar_selector=[:css, 'input[class="_3704LK"]']
-        @search_button_selector=[:css, 'button[class="L0Z3Pu"]']
+        @pop_up_close_button_selector=[:css, 'button._2KpZ6l._2doB4z']
+        @search_bar_selector=[:css, 'input._3704LK']
+        @search_button_selector=[:css, 'button.L0Z3Pu']
     end
     def open_website url
         $driver.navigate.to  url
